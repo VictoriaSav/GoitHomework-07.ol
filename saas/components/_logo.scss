@@ -1,15 +1,10 @@
 .logo {
-    color: $color-black;
-
-    font-family: Raleway, cursive;
+    font-family: $secondaryFont;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-}
+    align-items: center;
+    text-align: center;
 
-.logo-accent {
-    color: $accent-color;
-}
-
-.page-header__logo {
-    margin-right: 95px;
+    color: var(--accent-color);
 }
