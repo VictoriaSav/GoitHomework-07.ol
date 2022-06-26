@@ -452,8 +452,11 @@ ul {
   color: var(--white-text-color);
 }
 
-.footer-contact__address {
+.footer-contact__link.footer-contact__address.link {
   color: var(--white-text-color);
+}
+.footer-contact__link.footer-contact__address.link:hover, .footer-contact__link.footer-contact__address.link:focus {
+  color: var(--accent-color);
 }
 
 .footer-contact {

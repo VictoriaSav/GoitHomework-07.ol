@@ -19,9 +19,15 @@
     }
 }
 
-.footer-contact__address {
+.footer-contact__link.footer-contact__address.link {
     color: var(--white-text-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+    }
 }
+
+
 
 .footer-contact {
     margin-top: 20px;
