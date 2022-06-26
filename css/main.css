@@ -120,11 +120,9 @@ ul {
 .nav__link:focus, .nav__link:hover {
   color: var(--accent-color);
 }
-
 .nav__link--current {
   color: var(--accent-color);
 }
-
 .nav__link--current::after {
   position: absolute;
   display: block;
@@ -160,7 +158,6 @@ ul {
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header-contact__link:hover, .header-contact__link:focus {
   color: var(--accent-color);
 }
@@ -216,8 +213,10 @@ ul {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
+.hero__btn:hover, .hero__btn:focus {
+  background-color: #188ce8;
+  color: var(--white-text-color);
+}
 
 .features {
   padding-top: 94px;
@@ -362,7 +361,6 @@ ul {
   background-color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .team-list__social-link:hover, .team-list__social-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
@@ -403,11 +401,9 @@ ul {
   height: 90px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customers__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .customers__item:focus, .customers__item:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -423,7 +419,6 @@ ul {
   padding: 16px 32px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .customers__link:focus, .customers__link:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -450,12 +445,12 @@ ul {
   color: var(--white-text-color);
 }
 
-.footer-contact {
-  margin-top: 20px;
-}
-
 .footer-contact__address {
   color: var(--white-text-color);
+}
+
+.footer-contact {
+  margin-top: 20px;
 }
 
 .footer-contact__item {
@@ -469,7 +464,6 @@ ul {
   color: var(--footer-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-contact__link:hover, .footer-contact__link:focus {
   color: var(--accent-color);
 }
@@ -509,10 +503,9 @@ ul {
   height: 44px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #ffffff10;
+  background-color: rgba(255, 255, 255, 0.062745098);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-list__link:hover, .footer-list__link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
@@ -539,27 +532,21 @@ ul {
 
 .footer-submit__input {
   width: 358px;
-  height: 50px;
   margin: 0;
-  margin-right: 12px;
-  padding: 15px 16px;
+  padding: 13px 16px;
   border-radius: 4px;
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: var(--hero-background-color);
   color: var(--white-text-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.footer-submit__input:focus, .footer-submit__input:hover {
+  border-color: var(--accent-color);
+}
 .footer-submit__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-submit__input:hover,
-.footer-submit__input:focus {
-   border-color: var(--accent-color);
 }
 
 .footer-submit__btn {
@@ -583,7 +570,9 @@ ul {
   min-height: 43px;
   margin-left: 12px;
 }
-
+.footer-submit__btn:hover, .footer-submit__btn:focus {
+  background-color: #188ce8;
+}
 .footer-submit__btn::after {
   content: "";
   display: inline-block;
@@ -591,13 +580,6 @@ ul {
   height: 20px;
   margin-left: 10px;
   background-image: url(../images/send.svg);
-}
-
-.footer-submit__btn:hover,
-.footer-submit__btn:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  border-radius: 4px;
 }
 
 .portfolio-section {
@@ -664,7 +646,6 @@ ul {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-btn:hover, .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
@@ -681,7 +662,6 @@ ul {
   margin: 15px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-item:hover, .portfolio-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -715,14 +695,12 @@ ul {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-  transition: opacity 250ms var(--primary-cubic);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: all 250ms var(--primary-cubic);
 }
 
 .backdrop.is-hidden .modal {
@@ -757,7 +735,6 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-
 .close-btn:hover .modal-icon {
   fill: var(--accent-color);
 }
@@ -805,11 +782,9 @@ ul {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-input:focus {
   border-color: var(--accent-color);
 }
-
 .form-input:focus ~ .input-icon {
   fill: var(--accent-color);
 }
@@ -837,7 +812,6 @@ textarea {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 textarea:focus {
   border-color: var(--accent-color);
 }
@@ -846,7 +820,7 @@ textarea:focus {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: rgb(117, 117, 117);
 }
 
 .form-field-chek {
@@ -874,7 +848,6 @@ textarea:focus {
   border: 0;
   clip: rect(0 0 0 0);
 }
-
 .form-checkbox:checked + .icon-chek {
   background-image: url(../images/icon-check.svg);
   background-position: center;
@@ -894,7 +867,7 @@ textarea:focus {
 
 .policy-link {
   margin-left: 4px;
-  color: #2196f3;
+  color: rgb(33, 150, 243);
 }
 
 .form-btn {
@@ -919,8 +892,6 @@ textarea:focus {
   color: var(--white-text-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-btn:focus, .form-btn:hover {
   background-color: #188ce8;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
