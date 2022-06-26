@@ -6,6 +6,10 @@ body {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+}
+
 /* убираем точки списков */
 .list {
   list-style: none;

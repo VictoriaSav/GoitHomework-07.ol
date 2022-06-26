@@ -122,13 +122,14 @@
 .footer-submit__input {
     width: 358px;
     margin: 0;
-    padding: 13px 16px;
+    padding: 15px 16px;
     border-radius: 4px;
     outline: none;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--hero-background-color);
     color: var(--white-text-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
     &:focus,
     &:hover {
